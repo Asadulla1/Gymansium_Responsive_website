@@ -190,18 +190,19 @@ nav {
   }
   .hero-image-section {
     /* border: 1px solid red; */
-    padding: 0px 70px;
+    padding: 0px 50px;
   }
   .glassmorphism-container-two {
     width: 150px;
     line-height: 5px;
     padding: 5px 20px;
     top: 80px;
-    left: 290px;
+    left: 245px;
   }
   .glassmorphism-container {
-    width: 150px;
+    width: 120px;
     bottom: 165px;
-    left: 105px;
+    left: 90px;
+    height: 65px;
   }
 }
