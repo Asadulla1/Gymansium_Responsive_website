@@ -50,8 +50,108 @@ nav {
 .hamburg {
   display: none;
 }
+
+/* Hero section */
+.hero-container {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-heading {
+  font-size: 78px;
+  font-weight: 900;
+}
+.shape-font {
+  font-family: "Grey Qo", cursive;
+  font-size: 105px;
+}
+.hero-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  width: 60%;
+}
+.btn-primary {
+  padding: 16px 40px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn-secondary {
+  padding: 16px 40px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  background-color: rgb(14, 14, 14);
+  color: white;
+  margin-top: 20px;
+}
+.glassmorphism-container {
+  width: 200px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 80px;
+  left: -90px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background: rgb(230, 83, 60);
+  border-radius: 50%;
+}
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.glass-text-box > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(239, 237, 232, 0.65);
+}
+.glass-text-box > h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: rgb(250, 250, 249);
+}
+.glass-text-box {
+  line-height: 5px;
+}
+.hero-image-section {
+  position: relative;
+}
+.glassmorphism-container-two {
+  width: 185px;
+  line-height: 5px;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}
+
+.glassmorphism-container-two > div > h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.glassmorphism-container-two > div > p {
+  font-size: 13px;
+  font-weight: 400;
+}
 /* Media Query */
 @media screen and (max-width: 576px) {
+  /* Navbar Section  */
   .nav-item {
     display: none;
   }
@@ -66,5 +166,42 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 25px;
+  }
+  /* Hero Section  */
+  .hero-container {
+    display: block;
+    width: 100%;
+  }
+  .glassmorphism-container-two > div > h1 {
+    font-size: 30px;
+  }
+  .glassmorphism-container-two > div > p {
+    font-size: 10px;
+  }
+  .glass-text-box > p {
+    font-size: 10px;
+  }
+  .glass-text-box > h3 {
+    font-size: 18px;
+  }
+  .hero-section-description {
+    /* border: 1px solid red; */
+    padding: 0px 20px;
+  }
+  .hero-image-section {
+    /* border: 1px solid red; */
+    padding: 0px 100px;
+  }
+  .glassmorphism-container-two {
+    width: 150px;
+    line-height: 5px;
+    padding: 5px 20px;
+    top: 80px;
+    left: 290px;
+  }
+  .glassmorphism-container {
+    width: 150px;
+    bottom: 165px;
+    left: 105px;
   }
 }
