@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  /* margin: 0px; */
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  background-color: #171717;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+/* Navbar-section */
+header {
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 59px;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items > li > a {
+  text-decoration: none;
+  color: white;
+  margin-right: 47px;
+  width: 465px;
+  height: 46px;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+.nav-logo > h1 {
+  color: rgb(230, 83, 60);
+  font-size: 36px;
+  font-weight: 800;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+}
+.home {
+  margin-left: 2px;
+  padding: 15px 20px;
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+}
+.hamburg {
+  display: none;
+}
+/* Media Query */
+@media screen and (max-width: 576px) {
+  .nav-item {
+    display: none;
+  }
+  nav {
+    background-color: #171717;
+    border: none;
+  }
+  .hamburg {
+    display: block;
+  }
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+  }
+}
