@@ -180,6 +180,41 @@ nav {
   border-radius: 50%;
   border: 1px solid rgba(211, 208, 208, 0.836);
 }
+/* Run section  */
+.run-section {
+  padding: 30px 32px;
+  background-color: #4e4e4e98;
+  width: 80%;
+  border: 1px solid red;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.run-section-description > h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.run-section-description > p {
+  width: 80%;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.run-section-description > button {
+  border-radius: 42px;
+  padding: 16px 40px 16px 40px;
+  background: rgb(230, 83, 60);
+  outline: none;
+  border: none;
+  color: white;
+  margin-top: 50px;
+}
+.run-section-img > img {
+  /* width: 366px;
+  height: 312px; */
+  width: 100%;
+  border-radius: 18px;
+}
 /* Media Query */
 @media screen and (max-width: 576px) {
   /* Navbar Section  */
@@ -245,5 +280,15 @@ nav {
   }
   .habit-slogan > h1 {
     line-height: 70px;
+  }
+  /* Run section  */
+  .run-section {
+    /* width: 80%; */
+    display: block;
+    /* margin: 0 auto; */
+  }
+  .run-section-description > button {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
