@@ -442,6 +442,105 @@ form > button {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }
+/* Customer Review Section  */
+.Customer-review-section {
+  width: 80%;
+  margin: 0 auto;
+}
+.customer-section-title {
+  width: 50%;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+.customer-col-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  gap: 30px;
+}
+.col-1 {
+  position: relative;
+}
+.col-1 > img {
+  width: 300px;
+  border-radius: 18px;
+}
+.glassmorphism-card {
+  width: 500px;
+  background-color: rgba(80, 41, 34, 0.356);
+  padding: 20px;
+  position: absolute;
+  bottom: 240px;
+  left: 200px;
+}
+.col-2 {
+  border-radius: 18px;
+  width: 300px;
+  height: 600px;
+  background-image: url(../images/1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(10, 10, 10, 0.103);
+  background-blend-mode: overlay;
+  position: relative;
+}
+.col-2 > p,
+.col-3 > p {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 50px;
+  left: 95px;
+}
+.col-3 {
+  border-radius: 18px;
+  width: 300px;
+  height: 600px;
+  background-image: url(../images/3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(10, 10, 10, 0.459);
+  background-blend-mode: overlay;
+  position: relative;
+}
+.qutation {
+  font-size: 30px;
+  color: tomato;
+}
+.fa-star {
+  color: gold;
+}
+.arrow-container {
+  font-size: 20px;
+}
+.fa-arrow-left,
+.fa-arrow-right {
+  border: 1px solid rgba(255, 255, 255, 0.658);
+  border-radius: 50%;
+  padding: 20px;
+}
+.fa-arrow-left {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 600px;
+}
+.fa-arrow-right {
+  position: absolute;
+  left: 700px;
+}
+.customer-section-title > h1 {
+  font-size: 60px;
+}
+.customer-color {
+  color: rgb(230, 83, 60);
+}
+.customer-section-title > p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.responsive-text {
+  display: none;
+}
 /* Media Query */
 @media screen and (max-width: 576px) {
   /* Navbar Section  */
@@ -558,5 +657,42 @@ form > button {
   .fitness-footer-section {
     grid-template-columns: repeat(1, 1fr);
     justify-items: left;
+  }
+  /* customer feedback section  */
+  .customer-section-title {
+    width: 100%;
+  }
+  .customer-section-title > h1 {
+    font-size: 40px;
+  }
+  .customer-col-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  .glassmorphism-card {
+    display: none;
+  }
+  .arrow-container {
+    display: none;
+  }
+  .responsive-text {
+    display: block;
+  }
+  .responsive-text-card {
+    width: 300px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  .fa-arrow-down {
+    font-size: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.658);
+    border-radius: 50%;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.829);
+    margin: 15px 0px;
+    display: flex;
+    position: relative;
+    left: 120px;
   }
 }
