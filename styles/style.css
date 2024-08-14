@@ -302,6 +302,101 @@ form > button {
   margin-top: 20px;
   margin-bottom: 50px;
 }
+/* Team section  */
+.team-section {
+  width: 80%;
+  margin: 10px auto;
+}
+.team-description {
+  text-align: center;
+  line-height: 15px;
+  margin: 20px 0px;
+}
+.team-description > h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.team-description > p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.team-image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  justify-items: center;
+}
+.image-card {
+  width: 327px;
+  height: 272px;
+  border-radius: 18px;
+  margin: 20px;
+}
+.image-card-1 {
+  background: url("../images/trainer1.png");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.image-card-2 {
+  background: url("../images/trainer2.png");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.image-card-3 {
+  background: url("../images/trainer3.png");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.image-card-4 {
+  background: url("../images/trainer4.png");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.image-card-5 {
+  background: url("../images/trainer5.png");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.image-card-6 {
+  background: url("../images/trainer6.png");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.image-card > h3 {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 900;
+  bottom: 35px;
+  margin-bottom: 10px;
+  left: 25px;
+}
+.image-card > p {
+  position: absolute;
+  font-size: 14px;
+  bottom: 5px;
+  left: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /* Media Query */
 @media screen and (max-width: 576px) {
   /* Navbar Section  */
@@ -402,5 +497,16 @@ form > button {
   }
   .BMI-calculator-container {
     padding: 30px;
+  }
+  /* Team Section  */
+  .team-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image-card {
+    width: 263px;
+    height: 210px;
+  }
+  .team-description > h1 {
+    line-height: 60px;
   }
 }
