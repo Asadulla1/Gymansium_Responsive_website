@@ -149,6 +149,37 @@ nav {
   font-size: 13px;
   font-weight: 400;
 }
+/* Habit Section  */
+.habit-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.habit-slogan {
+  text-align: center;
+  line-height: 14px;
+}
+.habit-slogan > h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.habit-slogan > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.habit-round-card {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  text-align: center;
+}
+.card > img {
+  border-radius: 50%;
+  border: 1px solid rgba(211, 208, 208, 0.836);
+}
 /* Media Query */
 @media screen and (max-width: 576px) {
   /* Navbar Section  */
@@ -207,5 +238,12 @@ nav {
   }
   .hero-description {
     width: 90%;
+  }
+  /* habit section  */
+  .habit-round-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .habit-slogan > h1 {
+    line-height: 70px;
   }
 }
