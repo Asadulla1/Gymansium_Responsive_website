@@ -396,7 +396,52 @@ form > button {
   left: 25px;
   color: rgba(255, 255, 255, 0.5);
 }
-
+/* Fitness footer section  */
+.fitness-footer-section {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.col-1-container {
+  line-height: 20px;
+}
+.col-1-container > h1 {
+  font-size: 70px;
+  color: rgb(230, 83, 60);
+  font-weight: 900;
+}
+.col-1-container > p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.col-2-container > h1,
+.col-3-container > h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.col-2-container > h2,
+.col-3-container > h2 {
+  font-size: 23px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* All rights Reserved section  */
+.all-rights-reseverd-section {
+  width: 80%;
+  margin: 0 auto;
+}
+.hr {
+  margin-top: 80px;
+  margin-bottom: 36px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.all-rights-reseverd-section > p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
 /* Media Query */
 @media screen and (max-width: 576px) {
   /* Navbar Section  */
@@ -508,5 +553,10 @@ form > button {
   }
   .team-description > h1 {
     line-height: 60px;
+  }
+  /* Fitness-footer-section  */
+  .fitness-footer-section {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: left;
   }
 }
